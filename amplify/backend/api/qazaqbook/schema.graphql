@@ -1,0 +1,9 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String!
+  email: String
+  isMember: Boolean
+  userProgress: String
+  userLevel: String
+}
+ 
